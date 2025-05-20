@@ -1,0 +1,78 @@
+.Logo {
+    max-width: 150px;
+}
+
+.navbar {
+    position: sticky; 
+    top: 0; 
+    background-color: #C0D684;
+}
+
+
+.navbar ul {
+    margin: 0; 
+    padding: 0; 
+    text-align: center;
+}
+
+.navbar li {
+    display: inline-flex;
+}
+
+.navbar a{
+    font-family: novantique-script, sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    color: #3D0B37;
+}
+
+.navbar a:hover {
+    background-color: #F3F9D2;
+}
+
+
+h2 {
+    font-family: calendula, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center; 
+    color: #3D0B37
+}
+
+
+footer {
+    background-color: #C0D684
+}
+
+
+p {
+    font-family: calendula, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #3D0B37
+}
+
+
+h4 {
+    font-family: calendula, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #3D0B37
+}
+
+
+h1 {
+    font-family: "novantique-script", sans-serif;
+    font-size: 75px;
+    font-weight: 700;
+    font-style: normal;
+    color: #3D0B37
+}
+
+
+.banner {
+    background-color: #F3F9D2;
+}
