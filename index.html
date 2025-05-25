@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="css/style-sheet.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://use.typekit.net/olb0noj.css">
-        <script src="Java_Script.js"></script> 
     </head>
 
     <body> <!--content start -->
@@ -19,7 +18,7 @@
                 <ul>
                     <li><a href="index.html" class="w3-bar-item">Home</a></li>
                     <li><a href="resume.html" class="w3-bar-item">About</a></li>
-                    <li><a href="#" class="w3-bar-item">Contact</a></li>
+                    <li><a href="contact.html" class="w3-bar-item">Contact</a></li>
                 </ul>
             </div>
 
@@ -28,46 +27,39 @@
                     Gallery
                 </h2>
             </div>
-            <section class="w3-row-padding row-color-1">
+            <div class="gallery w3-row-padding">
                 
                 <article class="w3-col s12 m4 l4 w3-center w3-hover-shadow">
                     <h4>Magazine Ad_Shin</h4>
-                    <p><img id="Shin" src="assets/Magazine_Ad_thumbnail.jpg" alt="Photo of vine snake" ></p>
-			<!-- The Modal -->
-			<div id="ShinModal" class="modal">
-
-  				<!-- The Close Button -->
- 				<span class="close">&times;</span>
-
-  				<!-- Modal Content (The Image) -->
-  				<img class="modal-content" id="img01">
-
-  				<!-- Modal Caption (Image Text) -->
-  				<div id="caption"></div>
-			</div>
-			
-                </article>
-                <article class="w3-col s12 m4 l4 w3-center w3-hover-shadow">
-                    <h4>WIP Anise</h4>
-                    <p><img id="Anise" src="assets/Anise_WIP_thumbnail.png" alt="Photo of praying mantis"></p>
-                </article>
-                <article class="w3-col s12 m4 l4 w3-center w3-hover-shadow">
-                    <h4>WIP Mermaid</h4>
-                    <p><img id="Mermaid" src="assets/mermaid_study_thumbnail.jpg" alt="Photo of jaguar"></p>
+                    <p><img src="assets/Magazine_Ad_thumbnail.jpg" alt="Magazine Ad For Shin Ramen" class="thumbnail" data-full="assets/Magazine_Ad.jpg" /></p>
                 </article>
                 <article class="w3-col s12 m4 l4 w3-center w3-hover-shadow">
                     <h4>Personal Flag</h4>
-                    <p><img id="Flag" src="assets/Flag_thumbnail.png" alt="Photo of jaguar"></p>
+                    <p><img src="assets/Flag_thumbnail.png" alt="Personal Flag" class="thumbnail" data-full="assets/Flag.png" /></p>
                 </article>
                 <article class="w3-col s12 m4 l4 w3-center w3-hover-shadow">
                     <h4>Brochure Cover</h4>
-                    <p><img id="Cover" src="assets/Brochure_Cover_thumbnail.jpg" alt="Photo of jaguar"></p>
+                    <p><img src="assets/Brochure_Cover_thumbnail.jpg" alt="Brochure Cover" class="thumbnail" data-full="assets/Brochure_Cover.jpg" /></p>
+                </article>
+                <article class="w3-col s12 m4 l4 w3-center w3-hover-shadow">
+                    <h4>WIP Anise</h4>
+                    <p><img src="assets/Anise_WIP_thumbnail.png" alt="Anise Fanart" class="thumbnail" data-full="assets/Anise_WIP.png" /></p>
+                </article>
+                <article class="w3-col s12 m4 l4 w3-center w3-hover-shadow">
+                    <h4>WIP Mermaid</h4>
+                    <p><img src="assets/mermaid_study_thumbnail.jpg" alt="Mermaid Study" class="thumbnail" data-full="assets/mermaid_study.jpg" /></p>
                 </article>
                 <article class="w3-col s12 m4 l4 w3-center w3-hover-shadow">
                     <h4>Cloud Aria</h4>
-                    <p><img id="Cloud" src="assets/Cloud_Aria_thumbnail.png" alt="Photo of jaguar"></p>
+                    <p><img src="assets/Cloud_Aria_thumbnail.png" alt="Cloud Girl" class="thumbnail" data-full="assets/Cloud_Aria.png" /></p>
                 </article>
-            </section>                
+            </div>      
+            
+            <div id="modal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="modal-img" />
+                <p id="caption"></p>
+            </div>
 
             <footer class="w3-container w3-center w3-margin-top">
                 <p>Find me on social media.</p>
@@ -76,5 +68,6 @@
                 <i class="fa fa-linkedin w3-hover-opacity"></i>
                 <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
             </footer>
+        <script src="js/javas.js"></script> 
 	</body>
 </html>

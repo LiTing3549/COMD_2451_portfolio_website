@@ -1,13 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Banner*/
 .Logo {
-    max-width: 150px;
+  max-width: 150px;
 }
 
+.banner {
+  background-color: #F3F9D2;
+}
+
+h1 {
+  text-align: center;
+  font-family: "novantique-script", sans-serif;
+  font-size: 75px;
+  font-weight: 700;
+  font-style: normal;
+  color: #3D0B37
+}
+
+/*Nav*/
 .navbar {
-    position: sticky; 
-    top: 0; 
-    background-color: #C0D684;
+  position: sticky; 
+  top: 0; 
+  background-color: #C0D684;
 }
-
 
 .navbar ul {
     margin: 0; 
@@ -20,10 +40,10 @@
 }
 
 .navbar a{
-    font-family: novantique-script, sans-serif;
-    font-size: 25px;
-    font-weight: 400;
+    font-family: calendula, sans-serif;
+    font-weight: 700;
     font-style: normal;
+    font-size: 20px;
     text-decoration: none;
     color: #3D0B37;
 }
@@ -32,21 +52,15 @@
     background-color: #F3F9D2;
 }
 
-
+/*Text*/
 h2 {
-    font-family: calendula, sans-serif;
-    font-size: 30px;
+    font-family: novantique-script, sans-serif;
     font-weight: 700;
     font-style: normal;
+    font-size: 35px;
     text-align: center; 
     color: #3D0B37
 }
-
-
-footer {
-    background-color: #C0D684
-}
-
 
 p {
     font-family: calendula, sans-serif;
@@ -55,7 +69,6 @@ p {
     color: #3D0B37
 }
 
-
 h4 {
     font-family: calendula, sans-serif;
     font-weight: 700;
@@ -63,96 +76,314 @@ h4 {
     color: #3D0B37
 }
 
-
-h1 {
-    font-family: "novantique-script", sans-serif;
-    font-size: 75px;
-    font-weight: 700;
-    font-style: normal;
-    color: #3D0B37
+footer {
+  background-color: #C0D684
 }
 
-
-.banner {
-    background-color: #F3F9D2;
-}
-
-/* Style the Image Used to Trigger the Modal */
-#Shin {
-  border-radius: 5px;
+/*Gallery*/
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  grid-gap: 2rem;
+  object-fit: cover;
   cursor: pointer;
-  transition: 0.3s;
+  overflow: hidden;
 }
 
-#Shin:hover {opacity: 0.7;}
+.thumbnail:hover {
+  cursor: pointer;
+}
 
-/* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none;
+  position: fixed;
+  z-index: 10;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.8);
 }
 
-/* Modal Content (Image) */
+.modal p {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
 .modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
+  height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: 0.25s ease-in-out;
 }
 
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-/* Add Animation - Zoom in the Modal */
-.modal-content, #caption {
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
-}
-
-/* The Close Button */
 .close {
   position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
+  top: 0%;
+  right: 10px;
+  color: #fff;
   font-size: 40px;
   font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
+.close:hover {
+  color: #bbb;
+}
+
+/*Resume*/
+.avatar {
+  display: block;
+  margin: auto;
+  object-fit: cover;
+}
+
+h3 {
+  font-family: calendula, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #3D0B37;
+}
+
+h5 {
+  font-family: calendula, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #3D0B37;
+}
+
+h6 {
+  font-family: calendula, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #3D0B37;
+}
+
+.tag {
+  font-family: calendula, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #3D0B37;
+  background-color: #C0D684;
+}
+
+#portrait img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#about {
+  height: 500px;
+  text-align: center;
+  align-items: center;
+}
+
+
+.progress {
+  color: #C0D684;
+}
+
+
+/*Contact*/
+#fcf-form {
+    display:block;
+}
+
+.fcf-h3 {
+    font-family: calendula, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #3D0B37;
+}
+
+.fcf-body {
+    color: #3D0B37;
+    text-align: left;
+    padding: 30px;
+    padding-bottom: 10px;
+    max-width: 100%;
+}
+
+
+.fcf-form-group {
+    font-family: calendula, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 1rem;
+}
+
+
+.fcf-input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
     width: 100%;
-  }
+}
+
+
+.fcf-form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    outline: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+
+.fcf-form-control:focus {
+    border: 1px solid #313131;
+}
+
+
+select.fcf-form-control[size], select.fcf-form-control[multiple] {
+    height: auto;
+}
+
+
+textarea.fcf-form-control {
+    font-family: -apple-system, Arial, sans-serif;
+    height: auto;
+}
+
+
+label.fcf-label {
+    font-family: calendula, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+
+.fcf-credit {
+    font-family: calendula, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding-top: 10px;
+    font-size: 0.9rem;
+    color: #3D0B37;
+}
+
+
+.fcf-credit a {
+    font-family: calendula, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #3D0B37;
+    text-decoration: underline;
+}
+
+
+.fcf-credit a:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+
+.fcf-btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    .fcf-btn {
+        transition: none;
+    }
+}
+
+
+.fcf-btn:hover {
+    color: #212529;
+    text-decoration: none;
+}
+
+
+.fcf-btn:focus, .fcf-btn.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+
+.fcf-btn-primary {
+    color: #3D0B37;
+    background-color: #C0D684;
+    border-color: #C0D684;
+}
+
+
+.fcf-btn-primary:hover {
+    color: #3D0B37;
+    background-color: #F3F9D2;
+    border-color: #F3F9D2;
+}
+
+
+.fcf-btn-primary:focus, .fcf-btn-primary.focus {
+    color: #3D0B37;
+    background-color: #F3F9D2;
+    border-color: #F3F9D2;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+
+.fcf-btn-lg, .fcf-btn-group-lg>.fcf-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+}
+
+
+.fcf-btn-block {
+    display: block;
+    width: 100%;
+}
+
+
+.fcf-btn-block+.fcf-btn-block {
+    margin-top: 0.5rem;
+}
+
+
+input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[type="button"].fcf-btn-block {
+    width: 100%;
 }
